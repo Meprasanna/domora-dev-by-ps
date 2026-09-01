@@ -1,0 +1,22 @@
+CREATE TABLE "supplierOffers" (
+	"id" serial PRIMARY KEY NOT NULL,
+	"hotelId" integer NOT NULL,
+	"roomId" integer NOT NULL,
+	"providerKey" varchar(80) NOT NULL,
+	"providerName" varchar(120) NOT NULL,
+	"offerUrl" text,
+	"sourceRoomDescription" text NOT NULL,
+	"occupancy" integer NOT NULL,
+	"nightlyPriceInr" numeric(12, 2) NOT NULL,
+	"totalPriceInr" numeric(12, 2) NOT NULL,
+	"taxesInr" numeric(12, 2) DEFAULT '0' NOT NULL,
+	"feesInr" numeric(12, 2) DEFAULT '0' NOT NULL,
+	"currency" varchar(3) DEFAULT 'INR' NOT NULL,
+	"cancellationPolicy" text,
+	"comparable" integer DEFAULT 1 NOT NULL,
+	"status" text DEFAULT 'available' NOT NULL,
+	"isDemo" integer DEFAULT 0 NOT NULL,
+	"checkedAt" timestamp DEFAULT now() NOT NULL,
+	"expiresAt" timestamp,
+	"createdAt" timestamp DEFAULT now() NOT NULL
+);

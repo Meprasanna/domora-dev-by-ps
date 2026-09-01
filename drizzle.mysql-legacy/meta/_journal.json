@@ -1,0 +1,27 @@
+{
+  "version": "7",
+  "dialect": "mysql",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "5",
+      "when": 1786683397097,
+      "tag": "0000_stiff_morgan_stark",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "5",
+      "when": 1786685253001,
+      "tag": "0001_supreme_typhoid_mary",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "5",
+      "when": 1786689041863,
+      "tag": "0002_spotty_caretaker",
+      "breakpoints": true
+    }
+  ]
+}
