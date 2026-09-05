@@ -9,7 +9,7 @@ import { trpc } from "@/lib/trpc";
 import { t } from "@shared/i18n";
 import { normalizeGuestCount, isValidStayRange, buildSearchResultsPath } from "@/lib/homeSearch";
 import { LiveComparisonPrice } from "@/components/LiveComparisonPrice";
-import { StayDatePicker } from "@/components/StayDatePicker";
+import { StayDatePicker } from "@/components/StayDatePicker"; 
 import { SavedSearch, clearRecentSearches, loadRecentSearches, removeRecentSearch, saveRecentSearch } from "@/lib/savedSearch";
 
 const CITY_METADATA: Record<string, Record<"en" | "hi", { description: string; seasonalHighlight: string }>> = {
